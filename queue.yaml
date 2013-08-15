@@ -1,0 +1,7 @@
+queue:
+- name: emails
+  rate: 100/m
+  retry_parameters:
+    min_backoff_seconds: 10
+    max_backoff_seconds: 86400
+    max_doublings: 2
